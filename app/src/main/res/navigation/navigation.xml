@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/comidaFragment">
+
+    <fragment
+        android:id="@+id/bebidaFragment"
+        android:name="com.skye.cafeteria.BebidaFragment"
+        android:label="fragment_bebida"
+        tools:layout="@layout/fragment_bebida" />
+    <fragment
+        android:id="@+id/pagarFragment"
+        android:name="com.skye.cafeteria.PagarFragment"
+        android:label="fragment_pagar"
+        tools:layout="@layout/fragment_pagar" />
+    <fragment
+        android:id="@+id/comidaFragment"
+        android:name="com.skye.cafeteria.ComidaFragment"
+        android:label="fragment_comida"
+        tools:layout="@layout/fragment_comida" />
+</navigation>

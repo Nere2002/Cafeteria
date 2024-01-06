@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_comida"
+        android:icon="@drawable/restaurante"
+        android:title="Comida" />
+    <item
+        android:id="@+id/action_bebida"
+        android:icon="@drawable/bebida_fria"
+        android:title="Bebida" />
+    <item
+        android:id="@+id/action_pagar"
+        android:icon="@drawable/metodo_de_pago"
+        android:title="Pagar" />
+</menu>

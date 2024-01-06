@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools2="http://schemas.android.com/tools">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imcomida"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools2:background="@color/placeholder_color"
+                 />
+
+            <TextView
+                android:id="@+id/tvnombrecomida"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ComidaNombre"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintStart_toEndOf="@+id/imcomida"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tvdescripcioncomida"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ComidaDescripcion"
+                android:textSize="14sp"
+                android:textColor="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@+id/tvnombrecomida"
+                app:layout_constraintStart_toEndOf="@+id/imcomida"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvPreciocomida"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ComidaPrecio"
+                android:textSize="16sp"
+                android:textColor="@color/colorAccent"
+                app:layout_constraintTop_toBottomOf="@+id/tvdescripcioncomida"
+                app:layout_constraintStart_toEndOf="@+id/imcomida"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

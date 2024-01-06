@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Logo">#a6c4b1</color>
+    <!-- Definición de colores -->
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorDark">#666666</color>
+    <color name="cardview_background_color">#FFFFFF</color>
+    <color name="background_color">#E0E0E0</color>
+    <color name="placeholder_color">#CCCCCC</color>
+    <!--    dimensiones-->
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="recyclerview_padding_top">8dp</dimen>
+    <dimen name="recyclerview_padding_bottom">8dp</dimen>
+
+    <!-- Definición de fondo de imagen -->
+    <color name="imageBackground">#E0E0E0</color>
+
+    <!-- Definición de fondo redondeado para la imagen -->
+    <drawable name="rounded_background">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <corners android:radius="8dp" />
+            <solid android:color="@color/imageBackground" />
+        </shape>
+    </drawable>
+
+</resources>

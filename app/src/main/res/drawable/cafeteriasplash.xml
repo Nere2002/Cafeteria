@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Fondo de color -->
+    <item android:drawable="@color/Logo"/>
+
+    <!-- Imagen central con escala y posicionamiento -->
+    <item>
+        <bitmap
+            android:src="@drawable/cafeteria_1"
+            android:gravity="center"
+            android:scaleType="fitCenter"/>
+    </item>
+
+    <!-- Agrega un texto o logo adicional (ajusta el tamaño y color según sea necesario) -->
+<!--    <item>-->
+<!--        <bitmap-->
+<!--            android:src="@drawable/your_logo_or_text"-->
+<!--            android:gravity="center"-->
+<!--            android:scaleType="fitCenter"/>-->
+<!--    </item>-->
+
+</layer-list>
