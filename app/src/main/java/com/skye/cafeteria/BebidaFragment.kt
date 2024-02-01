@@ -35,15 +35,25 @@ class BebidaFragment : Fragment() {
         binding.recyclerviewBebida.adapter = bebidaAdapter
         binding.recyclerviewBebida.layoutManager = LinearLayoutManager(requireContext())
 
-        bebidaAdapter.setOnItemClickListener { selectedBebida ->
-            // Aquí debes navegar al fragmento de PagarFragment y pasar la lista de bebidas seleccionadas
-            val pagarFragment = PagarFragment.newInstance(listOf(selectedBebida))
-            parentFragmentManager.beginTransaction()
-                .replace(R.id.navHostFragment, pagarFragment)
-                .addToBackStack(null)
-                .commit()
-        }
+//        bebidaAdapter.setOnItemClickListener { selectedBebida ->
+//            // Aquí debes realizar alguna lógica para determinar si la bebida seleccionada es válida
+//            // y devolver un valor booleano indicando si se debe permitir la navegación a PagarFragment
+//            val isValidSelection = true // Ejemplo: supongamos que siempre permitimos la navegación
+//
+//            if (isValidSelection) {
+//                val pagarFragment = PagarFragment.newInstance(BebidaProvider.bebidaList.filter { it.isSelected })
+//                parentFragmentManager.beginTransaction()
+//                    .replace(R.id.navHostFragment, pagarFragment)
+//                    .addToBackStack(null)
+//                    .commit()
+//            } else {
+//                // Si la selección no es válida, muestra un mensaje de error o realiza alguna acción apropiada
+//                showToast("La bebida seleccionada no es válida")
+//            }
+//        }
     }
+
+
 
     fun showToast(message: String) {
         Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()

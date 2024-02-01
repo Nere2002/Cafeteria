@@ -21,7 +21,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:navGraph="@navigation/navigation"
             tools:layout="@layout/fragment_comida"/>
-        <!-- Resto de tu diseño -->
+
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"

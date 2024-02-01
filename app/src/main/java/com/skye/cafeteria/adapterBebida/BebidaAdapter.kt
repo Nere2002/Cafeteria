@@ -66,7 +66,7 @@ class BebidaAdapter(
         notifyDataSetChanged()
 
         // Llama a la función en el PagarFragment para actualizar la lista de elementos seleccionados
-        pagarFragment.setSelectedBebidaList(selectedItems)
+        //pagarFragment.setSelectedBebidaList(selectedItems)
     }
 
 

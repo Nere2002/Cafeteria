@@ -7,7 +7,8 @@ data class DataClassMenu(
     val nombre: String,
     val descripcion: String,
     val precio: Double,
-    val imagen: String
+    val imagen: String,
+
 ) : Parcelable {
     // Implementación del constructor secundario para la parcelación
     constructor(parcel: Parcel) : this(
